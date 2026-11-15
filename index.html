@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>张厚露 · 书条 | 生活的意义就是去码头整点书条</title>
+<meta name="description" content="张厚露的个人网站——夜航码头。自称书条君：爱书条，就像海鸥爱薯条。潍坊理工学院计算机科学与技术 2026 级。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚓</text></svg>">
+<link rel="stylesheet" href="styles.css">
+<script>(function(){try{var t=localStorage.getItem("gull-theme")||(matchMedia("(prefers-color-scheme: light)").matches?"day":"night");document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme="night"}})();</script>
+</head>
+<body>
+
+<div class="rail rail-l" aria-hidden="true">
+  <span class="lamp"></span>
+  <span class="rail-icon" data-sea="anchor"></span>
+  <p class="rail-text mono">MEANING OF LIFE = DOCK + SHUTIAO</p>
+  <span class="rail-icon b" data-sea="fish"></span>
+  <span class="coil"></span>
+</div>
+<div class="rail rail-r" aria-hidden="true">
+  <span class="coil"></span>
+  <span class="rail-icon" data-sea="shell"></span>
+  <p class="rail-text mono">去码头 · 整点书条 · GO GET SHUTIAO</p>
+  <span class="rail-icon b" data-sea="crab"></span>
+  <span class="lamp"></span>
+</div>
+
+<div class="flags" aria-hidden="true">
+  <span style="--c:#E4572E"></span><span style="--c:#FFC93C"></span><span style="--c:#EAF2F7"></span>
+  <span style="--c:#12304d"></span><span style="--c:#E4572E"></span><span style="--c:#FFC93C"></span>
+  <span style="--c:var(--rust-soft)"></span><span style="--c:#EAF2F7"></span><span style="--c:#E4572E"></span>
+  <span style="--c:#FFC93C"></span><span style="--c:#12304d"></span><span style="--c:#EAF2F7"></span>
+</div>
+
+<header class="nav">
+  <a class="nav-logo" href="index.html" id="logo" title="多点几下">
+    <svg width="16" height="16" viewBox="0 0 7 7" shape-rendering="crispEdges" aria-hidden="true">
+      <rect x="1" y="0" width="1" height="2" fill="#FFC93C"/><rect x="3" y="0" width="1" height="2" fill="#FFC93C"/><rect x="5" y="0" width="1" height="2" fill="#FFC93C"/>
+      <rect x="0" y="2" width="7" height="1" fill="#F0705A"/><rect x="0" y="3" width="7" height="3" fill="#E4572E"/>
+    </svg>
+    张厚露<span class="dim"> / 书条</span>
+  </a>
+  <button class="theme-btn mono" id="themeBtn" aria-label="切换日间/夜间">☀️ 日间</button>
+  <nav class="links">
+    <a href="index.html" class="active">首页</a>
+    <a href="about.html">关于</a>
+    <a href="works.html">作品</a>
+    <a href="contact.html">联系</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="kicker mono">// 潍坊理工学院 · 计算机科学与技术 · 2026 级一班</p>
+      <h1>生活的意义，<br>就是为了<br><span class="hl">去码头整点书条</span>。</h1>
+
+      <div class="waybill reveal">
+        <div class="wb-head mono">
+          <span>运单号 SHUTIAO-2026</span>
+          <span>重量：好奇心（满）</span>
+        </div>
+        <p class="intro-big">有人集邮，有人集卡，<br>我集<span class="hl">“这玩意咋做的”</span>。</p>
+        <p class="intro-sub">落款：<b>张厚露</b>，自封书条君 · 计科大一 · 船刚下水</p>
+        <span class="stamp mono">码头指定<br>形象代言</span>
+      </div>
+
+      <p class="type mono">海事电台正在播报：<span id="typed"></span></p>
+      <div class="ctas">
+        <a class="lnk" href="about.html">入港登记 →</a>
+        <a class="lnk" href="contact.html">通信频道 →</a>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="bubble mono" id="bubble">书条！</div>
+      <span class="bit bit1" aria-hidden="true"></span>
+      <span class="bit bit2" aria-hidden="true"></span>
+      <span class="bit bit3" aria-hidden="true"></span>
+
+      <div class="dock-scene">
+        <div class="crate crate-a" aria-hidden="true"><span class="crate-mark mono">書</span></div>
+        <div class="crate crate-b" aria-hidden="true"><span class="crate-mark mono">条</span></div>
+        <div class="buoy" aria-hidden="true"></div>
+        <div class="bollard" aria-hidden="true"></div>
+        <div class="rope" aria-hidden="true"></div>
+        <div class="catch" aria-hidden="true">
+          <span class="catch-sign mono">今日渔获</span>
+          <span class="catch-items">🦑🐟🦀🐚</span>
+        </div>
+        <!-- 像素海鸥由 script.js 渲染（PIX 字符画，改长相直接改它） -->
+        <div id="gull-slot"><noscript><div style="font-size:64px;text-align:center">🍟</div></noscript></div>
+        <div class="planks" aria-hidden="true"></div>
+        <span class="fizz f1" aria-hidden="true"></span>
+        <span class="fizz f2" aria-hidden="true"></span>
+        <span class="fizz f3" aria-hidden="true"></span>
+        <div class="sea" aria-hidden="true">
+          <span class="fishy">🐟</span>
+          <span class="fishy b">🐠</span>
+        </div>
+      </div>
+
+      <svg class="arrow" viewBox="0 0 60 40" width="52" aria-hidden="true">
+        <path d="M8 34 Q 12 16 34 8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M26 4 L36 8 L31 17" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p class="caption mono">↑ 代言人正在栈桥上站岗 · 点它掉薯条<br>（本人没空，本人还在鼓捣）</p>
+    </div>
+  </section>
+
+  <div class="ticker mono" aria-hidden="true">
+    <div class="track">
+      🐟 鱼市广播 &nbsp; 生活的意义 = 去码头整点书条 &nbsp;🦐&nbsp; 今日卸货：书条一箱 · 海鲜半船 &nbsp;🐚&nbsp; 鼓捣半径：理论上无限 &nbsp;🐟&nbsp; 雾航警告：闻到炸薯条味请鸣笛 &nbsp;🦑&nbsp; 本港海鸥伙食：海鲜与书条按心情发放 &nbsp;🐡&nbsp;
+      🐟 鱼市广播 &nbsp; 生活的意义 = 去码头整点书条 &nbsp;🦐&nbsp; 今日卸货：书条一箱 · 海鲜半船 &nbsp;🐚&nbsp; 鼓捣半径：理论上无限 &nbsp;🐟&nbsp; 雾航警告：闻到炸薯条味请鸣笛 &nbsp;🦑&nbsp; 本港海鸥伙食：海鲜与书条按心情发放 &nbsp;🐡&nbsp;
+    </div>
+  </div>
+
+  <div class="hazard" aria-hidden="true"></div>
+
+  <section class="section">
+    <div class="sec-head"><span class="num mono">00</span><h2>⚓ 今日港况预报</h2><span class="en mono">/ PORT REPORT</span></div>
+    <div class="forecast">
+      <div class="fc-item crate-card reveal">
+        <p class="dt mono">海况 SEA</p>
+        <p class="dd">微风，浪小</p>
+        <p class="dd-sub mono">适合出门鼓捣</p>
+      </div>
+      <div class="fc-item crate-card reveal">
+        <p class="dt mono">能见度 VISIBILITY</p>
+        <p class="dd">良好</p>
+        <p class="dd-sub mono">能看清手里的书条</p>
+      </div>
+      <div class="fc-item crate-card reveal">
+        <p class="dt mono">书条状态 SHUTIAO</p>
+        <p class="dd">刚出锅</p>
+        <p class="dd-sub mono">金黄酥脆 · 含知识量偏高</p>
+      </div>
+      <div class="fc-item crate-card reveal">
+        <p class="dt mono">薯条状态 FRIES</p>
+        <p class="dd">缺货</p>
+        <p class="dd-sub mono">本港只售书条，海鸥请谅解</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sec-head"><span class="num mono">01</span><h2>🐚 码头速览</h2><span class="en mono">/ PORT BRIEFING</span></div>
+    <div class="kv">
+      <div class="kv-item crate-card reveal">
+        <p class="dt mono">身份 CARGO TYPE</p>
+        <p class="dd">啥都喜欢鼓捣一下的大一新生</p>
+        <p class="dd-sub mono">易碎 · 好奇心包装 · 防潮防卷</p>
+      </div>
+      <div class="kv-item crate-card reveal">
+        <p class="dt mono">泊位 BERTH</p>
+        <p class="dd">潍坊理工学院</p>
+        <p class="dd-sub mono">计算机科学与技术 · 2026 级一班</p>
+      </div>
+      <div class="kv-item crate-card reveal">
+        <p class="dt mono">频道 CHANNEL</p>
+        <p class="dd"><a href="mailto:17660167651@163.com">17660167651@163.com</a></p>
+        <p class="dd-sub mono"><a href="https://gitee.com/zhang-houlu/shutiaojun" target="_blank" rel="noopener">GITEE / shutiaojun</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sec-head"><span class="num mono">02</span><h2>🦑 鼓捣宣言</h2><span class="en mono">/ MANIFESTO</span></div>
+    <p class="manifesto reveal">会六个爱好只是<span class="hl">样本</span>，不是<span class="hl">上限</span>。<br>凡是路过的、好奇的、让我冒出"这玩意咋做的？"念头的——都归鼓捣。</p>
+    <div class="tags reveal" aria-label="鼓捣候选清单">
+      <span class="tag mono">写代码写到它先求饶</span>
+      <span class="tag mono">拆一切还能拆的</span>
+      <span class="tag mono">修一切想抢救的</span>
+      <span class="tag mono">数码小玩意</span>
+      <span class="tag mono">厨房炼丹</span>
+      <span class="tag mono">旧物改造</span>
+      <span class="tag mono">表情包产出</span>
+      <span class="tag mono">AI 工具试玩</span>
+      <span class="tag mono">冷知识收藏</span>
+      <span class="tag mono plus">＋ 你随口一提的新领域</span>
+    </div>
+    <div class="doodle" id="doodle">
+      <button class="btn mono" id="doodleBtn">🎲 抽一支今日鼓捣签</button>
+      <p class="doodle-out mono" id="doodleOut"></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sec-head"><span class="num mono">03</span><h2>🐟 与代言人的关系</h2><span class="en mono">/ THE GULL</span></div>
+    <div class="explain reveal">
+      <p class="explain-big">有人问：你和那只海鸥什么关系？</p>
+      <p>同事。它负责馋，我负责学；馋的东西不一样，馋的程度差不多。</p>
+      <p class="foot mono">谐音的账就不细算了，反正站队一致。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sec-head"><span class="num mono">04</span><h2>🐡 码头常见问题</h2><span class="en mono">/ FAQ</span></div>
+    <div class="faq">
+      <details class="reveal">
+        <summary>你就是那只海鸥吗？</summary>
+        <p>同事关系。它负责馋，我负责学，详见上一节。</p>
+      </details>
+      <details class="reveal">
+        <summary>"书条"到底是个啥？</summary>
+        <p>"薯条"的谐音。书里的知识，炸到金黄酥脆，一口一个。口味因人而异，但本港不卖真薯条。</p>
+      </details>
+      <details class="reveal">
+        <summary>真的有作品吗？</summary>
+        <p>目前七个筐：六个空的，一个只装氛围。宁缺毋滥——货架可以空，不能假。</p>
+      </details>
+      <details class="reveal">
+        <summary>为什么不放留言板？</summary>
+        <p>留言板是机器接的，海鸥不接电话。想说话请直接走邮箱或 Gitee，两条都是真人频道。</p>
+      </details>
+      <details class="reveal">
+        <summary>这站会更新吗？</summary>
+        <p>会。航线日志和筐都是提前留好的空位：有新货就上架，没新货就让它空着好看。</p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="hazard" aria-hidden="true"></div>
+  <div class="foot-inner">
+    <p class="mono foot-slogan">⚓ 生活的意义，就是为了去码头整点书条。</p>
+    <p class="foot-links mono"><a href="mailto:17660167651@163.com">邮箱</a> · <a href="https://gitee.com/zhang-houlu/shutiaojun" target="_blank" rel="noopener">Gitee</a></p>
+    <p class="mono foot-copy">© 2026 张厚露 · 书条 ｜ 潍坊港发货 · 冷链直达 · 海鲜与书条概不退换 · 无 Cookie · 无统计</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
